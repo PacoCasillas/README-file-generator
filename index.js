@@ -1,14 +1,15 @@
 const inquirer = require('inquirer');
 const fileSystem = require('fs');
+// const { title } = require('process');
 
 inquirer.prompt([{
     type: 'input',
     message: 'What will the title be?' ,
     name: 'title' ,
-},
+}, 
 {
     type: 'input',
-    message: 'Write a description for your README file' ,
+    message: 'Write a description for your README file:' ,
     name: 'description' ,
 },
 {
@@ -36,52 +37,53 @@ inquirer.prompt([{
     message: 'Which of the following badges will you use for your project?' ,
     name: 'license' ,
     choices: [
-        "Academic Free License v3.0",
+        "None",
         "Apache License 2.0",
-        "Artistic License 2.0",
-        "Boost Software License 1.0",
+        "GNU General Public License v3.0",
+        "MIT License",
         "BSD 2-Clause 'Simplified' License",
         "BSD 3-Clause 'New' or 'Revised' License",
-        "BSD 3-Clause Clear License",
-        "Creative Commons",
+        "Boost Software License 1.0",
         "Creative Commons Zero v1.0 Universal",
-        "Creative Commons Attribution 4.0",
-        "Creative Commons Attribution Share Alike 4.0",
-        "Do What The F*ck You Want To Public License",
-        "Educational Community License v2.0",
-        "Eclipse Public License 1.0",
         "Eclipse Public License 2.0",
-        "European Union Public License 1.1",
         "GNU Affero General Public License v3.0",
-        "GNU General Public License family",
         "GNU General Public License v2.0",
-        "GNU General Public License v3.0",
-        "GNU Lesser General Public License family",
         "GNU Lesser General Public License v2.1",
-        "GNU Lesser General Public License v3.0",
-        "ISC",
-        "LaTeX Project Public License v1.3c",
-        "Microsoft Public License",
-        "MIT",
         "Mozilla Public License 2.0",
-        "Open Software License 3.0",
-        "PostgreSQL License",
-        "SIL Open Font License 1.1",
-        "University of Illinois/NCSA Open Source License",
         "The Unlicense",
-        "zLib License"
     ]
 },
+{
+    type: 'input',
+    message: 'So that users can reach you for questions and have access to your github portfolio. What is your github username?' ,
+    name: 'githubUsername' ,
+},
+{
+    type: 'input',
+    message: 'So users can also send questions via email. What is your or the dedicated email address for this project?' ,
+    name: 'emailAddress' ,
+},
 ])
-.then(data => {
-    console.log(data)
+
+// when everything is answered pass the answers into the generateReadme function
+.then(answers => {
+    console.log(answers)
+    const readmeContent = generateReadme(answers);
+
+    // call fs module to write the readme file
+    // do a validation, return error if there is one
+
+    fileSystem.writeFile('README.md', readmeContent, (err) =>
+        err ? console.log(err) : console.log('Readme file was successfully generated! Check README.md')
+    );
 });
 
 
-`# README-file-generator
-This repo is for the creation of a README file generator
 
-![License](https://img.shields.io/badge/License-${license}-lightblue.svg)
+const generateReadme = ({title, description, installationInstructions, usageInformation, contributionGuidelines, testInstructions, license, githubUsername, emailAddress}) => 
+`# ${title}
+
+![License](https://img.shields.io/badge/license-${license.replace(/ /g, '%20').replace(/-/g, '--')}-lightblue.svg)
 
 ## Description
 
@@ -90,9 +92,13 @@ ${description}
 ## Table of Contents
 
 - [Installation](#installation)
+- [Usage](#usage)
 - [License](#license)
 - [Credits](#credits)
 - [License](#license)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
@@ -107,18 +113,15 @@ ${usageInformation}
 
 The license used in this project is: ${license}
 
-## Badges
-
-
-
-## Features
-
-If your project has a lot of features, list them here.
-
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+${contributionGuidelines}
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.`
+${testInstructions}
+
+## Questions
+
+Github profile: https://github.com/${githubUsername}\n
+Please email any questions to: ${emailAddress}`;

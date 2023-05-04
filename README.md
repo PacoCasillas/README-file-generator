@@ -1,46 +1,44 @@
-`# README-file-generator
-This repo is for the creation of a README file generator
+# README file generator
 
-![License](https://img.shields.io/badge/License-${license}-lightblue.svg)
-
-${license}
+![License](https://img.shields.io/badge/license-BSD%202--Clause%20'Simplified'%20License-lightblue.svg)
 
 ## Description
 
-${description}
+This is a description of the README file
 
 ## Table of Contents
 
 - [Installation](#installation)
+- [Usage](#usage)
 - [License](#license)
 - [Credits](#credits)
 - [License](#license)
+- [How to Contribute](#how-to-contribute)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
-${installationInstructions}
+navigate to URL
 
 ## Usage
 
-${usageInformation}
-
+fill out corresponding details in console, to generate the README file
 
 ## License
 
-The license used in this project is: ${license}
-
-## Badges
-
-
-
-## Features
-
-If your project has a lot of features, list them here.
+The license used in this project is: BSD 2-Clause 'Simplified' License
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+send an email
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.`
+I tested by running it multiple times
+
+## Questions
+
+Github profile: https://github.com/PacoCasillas
+
+Please email any questions to: pacocasillasmx@gmail.com
