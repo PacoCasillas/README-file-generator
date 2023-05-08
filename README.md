@@ -25,6 +25,8 @@ If you are interested, the way to use this generator would be to clone this gith
 
 The way to use this generator would be to answer the list of questions, so that the README file can be generated. 
 
+Here is a walkthrough video of the application: https://drive.google.com/file/d/1gqtUnbTL0GupaXCs1Dm3hHXuFOCMdzCf/view?fbclid=IwAR3ctlcj4erkxiKQjFg4N8RJTr6IVMnALPo9rjad2FTatQl8B9G_IWcNzL0
+
 ## License
 
 The license used in this project is: MIT
