@@ -35,7 +35,7 @@ There is no current way to contribute to this assignment
 
 ## Tests
 
-I tested by running it multiple times and with different inputs to see if there would be any errors.
+I tested by my application by running it multiple times and with different inputs to see if there would be any errors.
 
 ## Questions
 

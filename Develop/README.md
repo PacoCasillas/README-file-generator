@@ -1,17 +1,15 @@
-# 1
+# README file generator
 
-![License](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-lightblue.svg)
+![License](https://img.shields.io/badge/license-MIT%20License-lightblue.svg)
 
 ## Description
 
-1
+I have created a README file generator to showcase my skills using node.js
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Credits](#credits)
 - [License](#license)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
@@ -19,27 +17,27 @@
 
 ## Installation
 
-1
+If you are interested, the way to use this generator would be to clone this github repository, using it on your local computer and running the commands in VS or a terminal. 
 
 ## Usage
 
-1
+The way to use this generator would be to answer the list of questions, so that the README file can be generated. 
 
 
 ## License
 
-The license used in this project is: GNU General Public License v3.0
+The license used in this project is: MIT License
 
 ## How to Contribute
 
-1
+There is no current way to contribute to this project
 
 ## Tests
 
-1
+I tested by my application by running it multiple times and with different inputs to see if there would be any errors.
 
 ## Questions
 
-Github profile: https://github.com/1
+Github profile: https://github.com/PacoCasillas
 
-Please email any questions to: 1
+Please email any questions to: pacocasillasmx@gmail.com

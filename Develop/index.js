@@ -87,6 +87,7 @@ inquirer.prompt([{
 // Call the generateReadme function that outlines what needs to be printed into the README file
 //   and pass in all the answers/data given by the user 
 const generateReadme = ({title, description, installationInstructions, usageInformation, contributionGuidelines, testInstructions, license, githubUsername, emailAddress}) => {
+    // if statement to make an empty string if license 'None' was chosen from the list, otherwise create a badge with the license chosen
     const licenseBadge = (license !== "None") ? `![License](https://img.shields.io/badge/license-${license.replace(/ /g, '%20').replace(/-/g, '--')}-lightblue.svg)` : '';
 return `# ${title}
 
@@ -100,8 +101,6 @@ ${description}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Credits](#credits)
 - [License](#license)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
