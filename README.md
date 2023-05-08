@@ -1,10 +1,10 @@
 # README file generator
 
-![License](https://img.shields.io/badge/license-BSD%202--Clause%20'Simplified'%20License-lightblue.svg)
+![License](https://img.shields.io/badge/license-MIT%20License-lightblue.svg)
 
 ## Description
 
-This is a description of the README file
+I have created a README file generator to showcase my skills using node.js
 
 ## Table of Contents
 
@@ -19,23 +19,23 @@ This is a description of the README file
 
 ## Installation
 
-navigate to URL
+If you are interested, the way to use this generator would be to clone this github repository, using it on your local computer and running the commands in VS or a terminal. 
 
 ## Usage
 
-fill out corresponding details in console, to generate the README file
+The way to use this generator would be to answer the list of questions, so that the README file can be generated. 
 
 ## License
 
-The license used in this project is: BSD 2-Clause 'Simplified' License
+The license used in this project is: MIT
 
 ## How to Contribute
 
-send an email
+There is no current way to contribute to this assignment
 
 ## Tests
 
-I tested by running it multiple times
+I tested by running it multiple times and with different inputs to see if there would be any errors.
 
 ## Questions
 
